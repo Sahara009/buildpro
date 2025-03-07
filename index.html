@@ -3,69 +3,353 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>KeyHome Real Estate Agency</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
   </head>
   <body>
-
-    <!-- <div class="container_image"> -->
-    
-    <!-- </div> -->
-   
-   
+    <div class="page">
+      <section class="hero">
         <header class="header">
-            <div class="container header__container">
-             <span class="logo">BuildPro</span>
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
+          <div class="header__sticky">
+            <div class="header__content">
+              <a class="header__logo-link" href="#">
+                <h1 class="header__logo">BuildPro</h1>
+              </a>
+              <nav class="header__nav">
+                <a href="#" class="header__nav-link" target="_blank">Home</a>
+                <a href="#" class="header__nav-link" target="_blank"
+                  >Services</a
+                >
+                <a href="#" class="header__nav-link" target="_blank"
+                  >Contacts</a
+                >
+              </nav>
             </div>
-         
+          </div>
         </header>
-    
-        <div class="container">
-            <section class="main">
-                <h1 class="main__title">Building Your Future Together</h1>
-                <p class="main__subtitle">Quality construction, built</p>
-                <nav class="main__nav">
-                    <ul class="main__list">
-                        <li class="main__item">
-                            <img src="./assets/icons/icon.png" alt="icon" class="main__icon">
-                            <span class="main__text"><b class="main__price">$5,000</b> Initial payment</span>
-                        </li>
-                        <li class="main__item">
-                            <img src="./assets/icons/icon.png" alt="icon" class="main__icon">
-                            <span class="main__text"><b class="main__price">$5,000</b> Initial payment</span>
-                        </li>
-                        <li class="main__item">
-                            <img src="./assets/icons/icon.png" alt="icon" class="main__icon">
-                            <span class="main__text"><b class="main__price">$5,000</b> Initial payment</span>
-                        </li>
-                    </ul>
-                </nav>
-                <button class="main__btn">ORDER</button>
-                <img src="./assets/images/house.png" alt="photo" class="main__img">
-            </section>
-            
+        <div class="hero__content">
+          <h2 class="hero__title">Your Dream Home Is Just One Click Away</h2>
+          <p class="hero__subtitle">Premium Real Estate Solutions</p>
+          <ul class="hero__list">
+            <li class="hero__item">
+              <span class="hero__check">
+                <img
+                  class="hero__check-icon"
+                  src="./img/hero-arrow.svg"
+                  width="39"
+                  height="37"
+                  alt="icon text"
+                />
+              </span>
+              <p class="hero__text">
+                Modern homes
+                <span class="hero__highlight">$850K</span> city view
+              </p>
+            </li>
+            <li class="hero__item">
+              <span class="hero__check">
+                <img
+                  class="hero__check-icon"
+                  src="./img/hero-arrow.svg"
+                  width="39"
+                  height="37"
+                  alt="icon text"
+                  aria-hidden="true"
+                />
+              </span>
+              <p class="hero__text">
+                <span class="hero__highlight">95%</span> customer satisfaction
+                rate
+              </p>
+            </li>
+            <li class="hero__item">
+              <span class="hero__check">
+                <img
+                  class="hero__check-icon"
+                  src="./img/hero-arrow.svg"
+                  width="39"
+                  height="37"
+                  alt="icon text"
+                  aria-hidden="true"
+                />
+              </span>
+              <p class="hero__text">
+                Over <span class="hero__highlight">1,000</span> successful deals
+                closed
+              </p>
+            </li>
+          </ul>
+          <button class="button hero__button">Order</button>
         </div>
+        <div class="hero__photo">
+          <picture>
+            <img
+              class="hero__image"
+              src="./img/house.png"
+              srcset="./img/hero-content@2x.jpg 2x"
+              alt="Luxury home exterior"
+              width="763"
+              height="1009"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </section>
 
-        <div style="height: 900px;"></div>
+      <section class="advantages" id="advantages">
+        <h2 class="visually-hidden">Our advantages</h2>
+        <div class="advantages__container">
+          <div class="advantages__photo advantages__photo--left">
+            <picture>
+              <img
+                class="advantages__image"
+                src="./img/house2.png"
+                srcset="./img/advantages-left@2x.jpg 2x"
+                alt="Modern interior design"
+                width="578"
+                height="723"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="advantages__content">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <span class="advantages__icon-wrapper">
+                  <img
+                    class="advantages__icon"
+                    src="./img/advantages-icon.svg"
+                    width="58"
+                    height="47"
+                    aria-hidden="true"
+                    alt="advantages icon"
+                  />
+                </span>
+                <p class="advantages__text">
+                  Expert property valuation and market analysis for optimal
+                  pricing
+                </p>
+              </li>
+              <li class="advantages__item">
+                <span class="advantages__icon-wrapper">
+                  <img
+                    class="advantages__icon"
+                    src="./img/advantages-icon.svg"
+                    width="58"
+                    height="47"
+                    aria-hidden="true"
+                    alt="advantages icon"
+                  />
+                </span>
+                <p class="advantages__text">
+                  Professional photography and virtual tours for all properties
+                </p>
+              </li>
+              <li class="advantages__item">
+                <span class="advantages__icon-wrapper">
+                  <img
+                    class="advantages__icon"
+                    src="./img/advantages-icon.svg"
+                    width="58"
+                    height="47"
+                    aria-hidden="true"
+                    alt="advantages icon"
+                  />
+                </span>
+                <p class="advantages__text">
+                  Dedicated real estate agents available 24/7 for your needs
+                </p>
+              </li>
+              <li class="advantages__item">
+                <span class="advantages__icon-wrapper">
+                  <img
+                    class="advantages__icon"
+                    src="./img/advantages-icon.svg"
+                    width="58"
+                    height="47"
+                    aria-hidden="true"
+                    alt="advantages icon"
+                  />
+                </span>
+                <p class="advantages__text">
+                  Comprehensive support throughout the buying or selling process
+                </p>
+              </li>
+            </ul>
+            <button class="button advantages__button">Order</button>
+          </div>
+          <div class="advantages__photo advantages__photo--right">
+            <picture>
+              <img
+                class="advantages__image"
+                src="./img/house3.png"
+                srcset="./img/advantages-right@2x.jpg 2x"
+                alt="Luxury home interior"
+                width="622"
+                height="723"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
 
-        <!-- <section class="desc">
-            <img src="./assets/images/house2.png" alt="photo" class="desc__img">
-            <div>ывпвап</div>
-            <img src="./assets/images/house3.png" alt="photo" class="desc__img">
-        </section> -->
-     
-  
-      <footer></footer>
+      <section class="contact" id="contact">
+        <div class="contact__container">
+          <div class="contact__form-wrapper">
+            <h2 class="contact__title">
+              Let's Find Your Perfect Home Together
+            </h2>
+            <form class="contact__form">
+              <input
+                class="contact__input"
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                class="contact__input"
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <div class="contact__checkbox-wrapper">
+                <input
+                  type="checkbox"
+                  id="privacy-policy"
+                  name="privacy-policy"
+                  class="contact__checkbox"
+                  required
+                />
+                <label for="privacy-policy" class="contact__checkbox-label"
+                  >I agree to the Privacy Policy</label
+                >
+              </div>
+              <button class="button contact__button" type="submit">
+                Submit Form
+              </button>
+            </form>
+          </div>
+          <div class="contact__photos">
+            <div class="contact__photo contact__photo--main">
+              <picture>
+                <img
+                  class="contact__image"
+                  src="./img/form-bg.png"
+                  srcset="./img/form-bg.png 2x"
+                  alt="Luxury estate view"
+                  width="1144"
+                  height="630"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="contact__photo contact__photo--top">
+              <picture>
+                <img
+                  class="contact__image"
+                  src="./img/form-bg-top.png"
+                  srcset="./img/form-bg-top@2x.png 2x"
+                  alt="Modern architecture"
+                  width="611"
+                  height="734"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <a href="#" class="footer__nav-link" target="_blank">About Us</a>
+            <a href="#" class="footer__nav-link" target="_blank">Properties</a>
+            <a href="#" class="footer__nav-link" target="_blank">Contact</a>
+          </nav>
+          <div class="footer__social">
+            <a href="#" class="footer__logo-link">
+              <h2 class="footer__logo">KeyHome</h2>
+            </a>
+            <div class="footer__social-links">
+              <a href="#" class="footer__social-link">
+                <img
+                  class="footer__social-icon"
+                  src="./img/instagram.svg"
+                  width="32"
+                  height="32"
+                  aria-hidden="true"
+                  alt="Instagram icon"
+                />
+              </a>
+              <a href="#" class="footer__social-link">
+                <img
+                  class="footer__social-icon"
+                  src="./img/tik-tok.svg"
+                  width="32"
+                  height="32"
+                  aria-hidden="true"
+                  alt="TikTok icon"
+                />
+              </a>
+              <a href="#" class="footer__social-link">
+                <img
+                  class="footer__social-icon"
+                  src="./img/linked.svg"
+                  width="32"
+                  height="32"
+                  aria-hidden="true"
+                  alt="LinkedIn icon"
+                />
+              </a>
+              <a href="#" class="footer__social-link">
+                <img
+                  class="footer__social-icon"
+                  src="./img/facebook.svg"
+                  width="32"
+                  height="32"
+                  aria-hidden="true"
+                  alt="Facebook icon"
+                />
+              </a>
+              <a href="#" class="footer__social-link">
+                <img
+                  class="footer__social-icon"
+                  src="./img/tg.svg"
+                  width="32"
+                  height="32"
+                  aria-hidden="true"
+                  alt="Telegram icon"
+                />
+              </a>
+              <a href="#" class="footer__social-link">
+                <img
+                  class="footer__social-icon"
+                  src="./img/yt.svg"
+                  width="32"
+                  height="32"
+                  aria-hidden="true"
+                  alt="YouTube icon"
+                />
+              </a>
+            </div>
+            <button class="button footer__button">Order</button>
+          </div>
+          <div class="footer__copyright">
+            <div class="footer__copyright-wrapper">
+              <span class="footer__copyright-text">© 2024, Copyright.</span>
+              <a href="#" class="footer__copyright-link">Privacy Policy</a>
+              <a href="#" class="footer__copyright-link">Terms of Use</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
